@@ -1,0 +1,58 @@
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    margin-top: 2rem;
+    text-align:center;
+    flex-direction: row;
+}
+
+.login-card{
+    text-align: center;
+    width: 20rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+
+.bottom-card{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    border:1px solid #ccc;
+}
+
+@media only screen and (max-width: 400px){
+    .login-card{
+        width:80%;
+    }
+
+    .bottom-card{
+        width: 100%;
+    }
+}
+
+.carbg{
+    background: url(../assets/crosl.png);
+    height: 590px;
+    width: 441px;
+    background-size: cover;
+    position: relative;
+}
+
+@media only screen and (max-width: 750px){
+    .carbg{
+        display: none;
+    }
+
+    .login-container{
+        margin-top: 5rem ;
+    }
+}
+
+.car{
+    position: absolute;
+    height: 423px;
+    width: 241px;
+    left: 143px;
+    top: 90px;
+}

@@ -1,0 +1,96 @@
+/* .feed-container{
+    width: 100vw;
+    height: 100vh;
+} */
+
+.feed-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-btn{
+    width: 15rem;
+}
+
+.nav-icons{
+    margin: 0.5rem;
+    color: black;
+}
+
+.navbar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-left:1rem;
+    padding-right: 1rem;
+}
+
+.nav-icons-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width : 500px){
+    .nav-icons{
+        display: none;
+    }
+}
+
+.progress-bar{
+    margin-top: 0.2rem;
+}
+
+.video-container{
+    height: 80vh;
+    width: 20rem;
+    margin-top: 0.5rem;
+    border-radius: 15px;
+    overflow-y: scroll;
+    scrollbar-width: 0;
+}
+
+.video-container::-webkit-scrollbar{
+    display: none;
+}
+
+.post-container{
+    height: 80vh;
+    width: 20rem;
+    margin-bottom: 0.4rem;
+    background-color: aqua;
+    border-radius: 15px;
+    position: relative;
+}
+
+.video-info{
+    width: 100%;
+    position: absolute;
+    bottom:15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.avatar-info{
+    margin-left:1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.like-info{ 
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width : 425px){
+    .upload-btn{
+        width:10rem;
+    }
+}
