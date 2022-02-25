@@ -33,8 +33,9 @@ function Index() {
 
       const user = await signup(email, password);
       console.log("Signed Up", user);
-      const storageRef = ref(storage, `${user.user.uid}/Profile`);
 
+
+      const storageRef = ref(storage, `${user.user.uid}/Profile`);
       const uploadTask = uploadBytesResumable(storageRef, file);
 
       uploadTask.on(
@@ -54,7 +55,8 @@ function Index() {
               name : name,
               email : email,
               uid : user.user.uid,
-              photoURL : downloadURL
+              photoURL : downloadURL,
+              posts:[]
             }
             console.log("OBJ = ",user);
             console.log("uid --------> ", user.user.uid);

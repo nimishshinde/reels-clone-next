@@ -19,7 +19,7 @@ import { AuthContext } from '../context/auth';
 import { useRouter } from "next/router";
 
 
-const ResponsiveAppBar = () => {
+const ResponsiveAppBar = ({userData}) => {
   
   const {logout} = React.useContext(AuthContext);
   const router = useRouter();
@@ -88,8 +88,7 @@ const ResponsiveAppBar = () => {
 
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar sx={{margin:"0.5rem"}} />
-                {/* src="/static/images/avatar/2.jpg" alt="Remy Sharp"*/}
+                <Avatar sx={{margin:"0.5rem"}} src={userData?.photoURL} alt="Remy Sharp" />
               </IconButton>
             </Tooltip>
             <Menu

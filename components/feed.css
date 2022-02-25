@@ -2,6 +2,11 @@
     width: 100vw;
     height: 100vh;
 } */
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
 
 .feed-container{
     display: flex;
@@ -49,7 +54,7 @@
     width: 20rem;
     margin-top: 0.5rem;
     border-radius: 15px;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     scrollbar-width: 0;
 }
 
@@ -60,10 +65,21 @@
 .post-container{
     height: 80vh;
     width: 20rem;
-    margin-bottom: 0.4rem;
-    background-color: aqua;
-    border-radius: 15px;
+    margin-bottom: 0.5rem;
+    background-color: transparent;
     position: relative;
+    overflow: hidden;
+}
+
+.post-container > video{
+    height: 80vh;
+    width: 20rem;
+    /* border-radius: 25px;  */
+}
+
+p{
+    color:white;
+    font-family: Verdana;
 }
 
 .video-info{
@@ -71,7 +87,7 @@
     position: absolute;
     bottom:15px;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
 }
 
 .avatar-info{
@@ -84,8 +100,8 @@
 .like-info{ 
     margin-right: 1rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* flex-direction: column; */
+    justify-content: space-between;
     align-items: center;
 }
 
