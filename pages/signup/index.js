@@ -147,7 +147,7 @@ function Index() {
 
           <div className="bottom-card">
             Already Hava an Account ?
-            <Link href="/login">
+            <Link href="/login" passHref={true} >
               <span style={{ color: "blue", cursor: "pointer" }}>Login</span>
             </Link>
           </div>
